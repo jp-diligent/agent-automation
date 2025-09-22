@@ -37,9 +37,9 @@ Feature: Issue Management Complex Journey
     When I log in as "jpablosanchez+aut_issueowner@diligent.com" (Issue Owner)
     And the Issue Owner edits issue
     And adds Action 2
-    And sets "Automation ActionOwner1" as the owner of Action 1
-    And sets "Automation ActionOwner2" as the owner of Action 2
-    And sets "Automation ActionApprover2" as the approver of Action 2
+    And sets "jpablosanchez+aut_actionowner1@diligent.com" as the owner of Action 1
+    And sets "jpablosanchez+aut_actionowner2@diligent.com" as the owner of Action 2
+    And sets "jpablosanchez+aut_actionapprover2@diligent.com" as the approver of Action 2
     And saves without initiation
     Then the Issue status should be "In Progress" and not inititated
     And Action 1 should have status "DRAFT"
